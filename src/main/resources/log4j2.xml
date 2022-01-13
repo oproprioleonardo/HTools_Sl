@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration name="htools">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    [%highlight{%-5level} %d{yyyy-MM-dd HH:mm:ss}] [%t] %c{1} - %msg%n
+                </pattern>>
+            </PatternLayout>
+        </Console>
+        <RollingFile name="MyFile"
+                     fileName="./botlogs/latest.log"
+                     filePattern="./botlogs/%d{dd-MM-yyyy_HH-mm}.log.gz"
+                     ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>[{%-5level} %d{yyyy-MM-dd HH:mm:ss}] [%t] %c{1} - %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.hibernate.SQL" level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="MyFile"/>
+        </Logger>
+        <Logger name="org.hibernate.type.descriptor.sql" level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="MyFile"/>
+        </Logger>
+        <Logger name="net.dv8tion.jda.internal.requests.Requester" level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="MyFile"/>
+        </Logger>
+        <Root level="info" additivity="false">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="MyFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

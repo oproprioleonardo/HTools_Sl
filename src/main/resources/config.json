@@ -1,0 +1,119 @@
+{
+  "adminRole": 883094108724396037,
+  "verifiedRoleId": 886235988970594334,
+  "teamGuildId": 650823944005484574,
+  "recruitmentGuildId": 883094108695060510,
+  "referenceGuildId": 849627467853332501,
+  "recruitmentSystem": {
+    "timeToAliveInvite": 10080,
+    "intervieweeRoleId": 883094108695060518,
+    "avaliationRoleId": 890657151478030379,
+    "acceptedRoleId": 886941282818224138,
+    "channelInviteId": 883094108724396040,
+    "logInviteChannelId": 883488638908903445,
+    "logChannelId": 883488573502926870,
+    "studiosChannelId": 882069341124845578,
+    "teamChannelId": 883094270754578461,
+    "suppoterChannelId": 11111111111111,
+    "gamemodes": [
+      {
+        "name": "sw",
+        "label": "SkyWars",
+        "roleId": 883094108695060515,
+        "categoryId": 883094759562960936
+      },
+      {
+        "name": "bw",
+        "label": "Bedwars",
+        "roleId": 883094108695060514,
+        "categoryId": 883094109261271094
+      }
+    ]
+  },
+  "reportSystem": {
+    "categories": [
+      {
+        "id": "report-discord",
+        "label": "Discord",
+        "bugs": [
+          {
+            "id": "report-discord-bot",
+            "description": "Problemas com bots",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Discord - Problemas com bots"
+          },
+          {
+            "id": "report-discord-chat",
+            "description": "Problemas com chats",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Discord - Problemas com chats"
+          }
+        ]
+      },
+      {
+        "id": "report-webforum",
+        "label": "Web/Fórum",
+        "bugs": [
+          {
+            "id": "report-webforum-backend",
+            "description": "Backend",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Web/Fórum - Backend"
+          },
+          {
+            "id": "report-webforum-frontend",
+            "description": "Frontend",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Web/Fórum - Frontend"
+          },
+          {
+            "id": "report-webforum-paymentsystem",
+            "description": "Sistema de pagamentos",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Web/Fórum - Sistema de pagamentos"
+          }
+        ]
+      },
+      {
+        "id": "report-minecraft",
+        "label": "Minecraft",
+        "bugs": [
+          {
+            "id": "report-minecraft-minigames",
+            "description": "MiniGames",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Minecraft - Minigames"
+          },
+          {
+            "id": "report-minecraft-factions",
+            "description": "Factions",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Minecraft - Factions"
+          },
+          {
+            "id": "report-minecraft-rankup",
+            "description": "RankUp",
+            "roles": [
+              "849627467853332510"
+            ],
+            "tag": "Minecraft - RankUp"
+          }
+        ]
+      }
+    ]
+  }
+}

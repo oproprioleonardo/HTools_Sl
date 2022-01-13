@@ -1,0 +1,24 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="recruitment_processor">
+        <provider>org.hibernate.reactive.provider.ReactivePersistenceProvider</provider>
+        <class>com.leon.screcruit.internal.entities.RecruitmentImpl</class>
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mysql://localhost:3306/main?useSSL=false&amp;useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="manager"/>
+            <property name="hibernate.connection.pool_size" value="30"/>
+            <property name="hibernate.vertx.pool.idle_timeout" value="25000"/>
+            <property name="hibernate.vertx.pool.connect_timeout" value="20000"/>
+            <property name="javax.persistence.schema-generation.action" value="create"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
