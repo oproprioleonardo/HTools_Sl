@@ -1,7 +1,6 @@
 # HTools_Sl
 
 Este projeto é referente a criação de um bot de recrutamento de membros para equipe, gravado em Java.
-Não me julgue, este é meu segundo projeto utilizando o Discord JDA.
 
 ## Recursos
 
